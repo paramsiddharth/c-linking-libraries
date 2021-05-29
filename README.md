@@ -30,13 +30,35 @@ Within each of those two, I have created:
 The `Makefile`s within those two directories contain a default `build` instruction to compile the code, and
 a `clean` instruction to clean all files `built`.
 
-The source code used for the sample library and the
-testing file is container inside `src` in the repository's
-root. The source files are symbolically linked into the
-desired places, so please ensure you have enabled symbolic
-links in Git before cloning.
-```bash
-git config --global core.symlinks true
-```
+## Information
+-	The source code used for the sample library and the
+	testing file is container inside `src` in the repository's
+	root. The source files are symbolically linked into the
+	desired places, so please ensure you have enabled symbolic
+	links in Git before cloning.
+	```bash
+	git config --global core.symlinks true
+	```
+-	In Windows systems, this would also require you to clone via
+	a console with administrative priviledges, because creating
+	symbolic links would require them.
+-	Git won't warn you if you clone without giving
+	administrative privileges: It will simply create copies
+	of files instead of symbolcally linking them,
+	even if you have the global `core.symlinks` set to
+	`true`. This would
+	still allow everything to work, but if you need to edit,
+	for example, `main.c`, the changes won't reflect everywhere
+	`main.c` is being used.
+-	To enforce symbolic links while creating the clone,
+	use
+	```bash
+	git clone -c core.symlinks=true https://url/to/repo
+	```
+	You don't need to enforce this if you are running
+	the command-line with administrative privileges.
+-	If you have Developer Mode enabled in Windows 10,
+	you won't need to grant administrative privileges for
+	using symbolic links.
 
 # Made with ❤ by [Param](https://www.paramsid.com).
