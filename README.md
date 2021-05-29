@@ -31,6 +31,9 @@ The `Makefile`s within those two directories contain a default `build` instructi
 a `clean` instruction to clean all files `built`.
 
 ## Information
+-	The 'link' being referred to in 'symbolic link'
+	and the one in 'static/dynamic link' are completely
+	unrelated.
 -	The source code used for the sample library and the
 	testing file is container inside `src` in the repository's
 	root. The source files are symbolically linked into the
