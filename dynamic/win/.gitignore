@@ -1,0 +1,8 @@
+library/*.obj
+library/*.dll
+
+usage/*.obj
+usage/*.dll
+usage/*.exe
+
+test/
