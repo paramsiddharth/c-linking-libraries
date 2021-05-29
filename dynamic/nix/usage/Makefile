@@ -7,7 +7,7 @@
 # Copying libbod.so to the current directory is needed for the above to work
 build:
 	gcc -o main.o -c main.c -I"../library"
-	gcc -o main main.o  -L"../library" -lbod -Wl,-rpath=.
+	gcc -o main main.o -L"../library" -lbod -Wl,-rpath=.
 	cp ../library/libbod.so .
 
 clean:
