@@ -1,0 +1,9 @@
+library/*.o
+library/*.so
+
+usage/main
+usage/*.o
+usage/*.so
+usage/*.out
+
+test/
