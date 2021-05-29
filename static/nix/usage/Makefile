@@ -5,5 +5,5 @@ build:
 	gcc -o main main.o -L"../library" -lbod
 
 clean:
-	rm *.o
-	rm main
+	-rm *.o
+	-rm main

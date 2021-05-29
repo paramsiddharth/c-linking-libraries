@@ -5,5 +5,5 @@ build:
 	gcc -o main.exe main.obj -L"../library" -lbod
 
 clean:
-	rm *.obj
-	rm *.exe
+	-rm *.obj
+	-rm *.exe

@@ -5,5 +5,5 @@ build:
 	ar rcs libbod.lib bod.obj
 
 clean:
-	rm *.obj
-	rm *.lib
+	-rm *.obj
+	-rm *.lib
