@@ -2,10 +2,10 @@
 
 # .obj -> Object
 # .dll -> Dynamic Link Library (Built dynamic library)
-# -s -> Strip/Remove all symbol table and relocation information from the executable (reduces size)
+# -s -> Strip/Remove all symbol table and relocation information from the executable (optional, reduces size)
 build:
 	gcc -o bod.obj -c bod.c
-	gcc -shared -o libbod.dll bod.obj
+	gcc -s -shared -o libbod.dll bod.obj
 
 clean:
 	-rm *.obj
