@@ -1,0 +1,8 @@
+library/*.o
+library/*.a
+
+usage/main
+usage/*.o
+usage/*.out
+
+test/
